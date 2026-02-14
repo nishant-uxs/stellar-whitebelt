@@ -7,6 +7,8 @@ A modern, user-friendly decentralized application for sending XLM payments on th
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6.3-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4.17-38bdf8)
 
+🌐 **Live Demo**: [https://stellar-whitebelt.onrender.com](https://stellar-whitebelt.onrender.com)
+
 ## 🎯 Features
 
 ✅ **Wallet Integration**
@@ -276,7 +278,7 @@ This app is configured for easy deployment on Render's free tier.
 
 5. **Deploy!**
    - Render will automatically build and deploy
-   - Your app will be live at: `https://xlm-pay.onrender.com`
+   - Your app will be live at: `https://stellar-whitebelt.onrender.com`
 
 **Note**: Free tier apps sleep after 15 minutes of inactivity. First request may take 30-60 seconds to wake up.
 
