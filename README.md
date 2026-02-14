@@ -125,17 +125,16 @@ http://localhost:5000
 
 ## 📸 Screenshots
 
-> **Note**: Screenshots will be added soon. See `screenshots/README.md` for details on required screenshots.
-
-The application includes the following key screens:
-
 ### 1. Homepage - Welcome Screen
+![Homepage Welcome](./screenshots/homepage-welcome.jpg)
 *Clean welcome screen with XLM Pay branding and Connect Wallet button*
 
 ### 2. Wallet Connected with Balance
-*Dashboard showing connected Freighter wallet with balance and payment form*
+![Wallet Connected](./screenshots/wallet-connected.jpg)
+*Dashboard showing connected Freighter wallet with 9,970 XLM balance and payment form*
 
 ### 3. Successful Transaction
+![Transaction Success](./screenshots/transaction-success.jpg)
 *Transaction successful with hash displayed and "View on Explorer" link*
 
 ## 🎨 Key Components
