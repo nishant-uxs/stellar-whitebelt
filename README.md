@@ -243,7 +243,59 @@ npm run check
 - [ ] Balance charts
 - [ ] Multi-wallet support (xBull, Albedo)
 
-## 🐛 Troubleshooting
+## � Deployment
+
+### Deploy to Render
+
+This app is configured for easy deployment on Render's free tier.
+
+**Quick Deploy:**
+
+1. **Push to GitHub** (already done ✅)
+   ```bash
+   git push origin main
+   ```
+
+2. **Create Render Account**
+   - Visit [render.com](https://render.com)
+   - Sign up with GitHub
+
+3. **Deploy from Dashboard**
+   - Click "New +" → "Web Service"
+   - Connect your GitHub repository: `nishant-uxs/stellar-whitebelt`
+   - Render will auto-detect `render.yaml` configuration
+   - Click "Create Web Service"
+
+4. **Configuration (Auto-detected from render.yaml)**
+   - **Name**: xlm-pay
+   - **Build Command**: `npm install && npm run build`
+   - **Start Command**: `npm start`
+   - **Plan**: Free
+   - **Node Version**: 20.11.0
+
+5. **Deploy!**
+   - Render will automatically build and deploy
+   - Your app will be live at: `https://xlm-pay.onrender.com`
+
+**Note**: Free tier apps sleep after 15 minutes of inactivity. First request may take 30-60 seconds to wake up.
+
+### Manual Deployment (Alternative)
+
+If you prefer manual configuration:
+
+```bash
+# Build Command
+npm install && npm run build
+
+# Start Command
+npm start
+
+# Environment Variables
+NODE_VERSION=20.11.0
+PORT=10000
+```
+
+## �🐛 Troubleshooting
 
 **Wallet won't connect?**
 - Ensure Freighter is installed
