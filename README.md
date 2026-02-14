@@ -123,17 +123,17 @@ http://localhost:5000
 
 ## 📸 Screenshots
 
-### Wallet Connected State
+### 1. Homepage - Welcome Screen
+![Homepage Welcome](./screenshots/homepage-welcome.png)
+*Clean welcome screen with XLM Pay branding and Connect Wallet button*
+
+### 2. Wallet Connected with Balance
 ![Wallet Connected](./screenshots/wallet-connected.png)
-*Dashboard showing connected wallet with address and balance*
+*Dashboard showing connected Freighter wallet with 9,970 XLM balance and payment form*
 
-### Balance Display
-![Balance Display](./screenshots/balance-display.png)
-*XLM balance card with refresh functionality*
-
-### Successful Transaction
+### 3. Successful Transaction
 ![Transaction Success](./screenshots/transaction-success.png)
-*Successful payment with transaction hash and explorer link*
+*Transaction successful with hash displayed and "View on Explorer" link*
 
 ## 🎨 Key Components
 

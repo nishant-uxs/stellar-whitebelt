@@ -1,19 +1,37 @@
-# Screenshots
+# Screenshots for Stellar White Belt Submission
 
-Please add the following screenshots to this folder:
+This folder contains screenshots demonstrating the XLM Pay application functionality.
 
-1. **wallet-connected.png** - Dashboard showing connected wallet with address and balance
-2. **balance-display.png** - XLM balance card with refresh functionality
-3. **transaction-success.png** - Successful payment with transaction hash and explorer link
+## Required Screenshots ✅
 
-## How to Take Screenshots
+### 1. homepage-welcome.png
+- **Description**: Clean welcome screen with XLM Pay branding
+- **Shows**: Logo, welcome message, Connect Wallet button, Testnet indicator
+- **Status**: Ready to add
 
-1. Run the app: `npm run dev`
-2. Connect your Freighter wallet
-3. Fund your testnet account via [Friendbot](https://laboratory.stellar.org/#account-creator?network=test)
-4. Take screenshots of:
-   - Connected wallet state
-   - Balance display
-   - Successful transaction result
+### 2. wallet-connected.png  
+- **Description**: Dashboard with connected Freighter wallet
+- **Shows**: Wallet address (GCHL5...YINEL), balance (9,970 XLM), payment form
+- **Status**: Ready to add
 
-Save the screenshots in this folder with the names mentioned above.
+### 3. transaction-success.png
+- **Description**: Successful transaction confirmation
+- **Shows**: Success message, transaction hash, "View on Explorer" button, updated balance (9,960 XLM)
+- **Status**: Ready to add
+
+## How to Add Screenshots
+
+Save your screenshots with the exact filenames above in this folder, then:
+
+```bash
+git add screenshots/
+git commit -m "Add application screenshots"
+git push
+```
+
+## Screenshot Guidelines
+
+- Format: PNG (preferred) or JPG
+- Resolution: Full browser window or cropped to show relevant content
+- Theme: Dark mode (as shown in app)
+- Quality: Clear and readable text
