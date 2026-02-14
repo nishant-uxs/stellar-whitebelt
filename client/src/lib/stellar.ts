@@ -42,8 +42,31 @@ export async function submitTransaction(signedXdr: string): Promise<string> {
     signedXdr,
     NETWORK_PASSPHRASE
   );
-  const result = await server.submitTransaction(transaction);
-  return result.hash;
+  
+  // Add timeout to prevent hanging
+  const timeoutPromise = new Promise<never>((_, reject) => {
+    setTimeout(() => reject(new Error("Transaction submission timed out after 30 seconds")), 30000);
+  });
+  
+  try {
+    const result = await Promise.race([
+      server.submitTransaction(transaction),
+      timeoutPromise
+    ]);
+    return result.hash;
+  } catch (error: any) {
+    // Better error messages
+    if (error.response?.data?.extras?.result_codes) {
+      const codes = error.response.data.extras.result_codes;
+      if (codes.operations?.includes('op_no_destination')) {
+        throw new Error('op_no_destination: Destination account does not exist. Fund it first via Friendbot.');
+      }
+      if (codes.operations?.includes('op_underfunded')) {
+        throw new Error('op_underfunded: Insufficient balance for this transaction.');
+      }
+    }
+    throw error;
+  }
 }
 
 export function isValidStellarAddress(address: string): boolean {
